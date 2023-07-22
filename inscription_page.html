@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="form.css">
+
+    <title>Page d'inscription</title>
+</head>
+<body>
+    <section class='forms'>
+         <form action="" method ="POST">
+        <h2>Inscrivez vous ici</h2>
+        <input type="text" name='nom' placeholder='Nom'>
+        <br><br>
+        <input type="text" name='postnom' placeholder='Post_nom'>
+        <br><br>
+        <input type="text" name='prenom' placeholder='Prénom'>
+        <br><br>
+        <input class='mail' type="mail" name='mail' placeholder='Email'>
+        <br><br>
+        <input type="password" name='pass' placeholder='Mot de passe'>
+        <br><br>
+        <input type="password" name='pass2' placeholder='Répeter le mot de passe'>
+        <br><br>
+        <input type="submit" name='send' value='Envoyer'>
+        <br><br>
+
+    </form>
+</section>
+   
+    
+    <?php
+  $bdd= new PDO('mysql:host=localhost; dbname=gloire', 'root', '');
+ if(isset($_POST['send'])){
+    $fname=htmlspecialchars($_POST['nom']);
+    $postname=htmlspecialchars($_POST['postnom']);
+    $sname=htmlspecialchars($_POST['prenom']);
+    $mdp=htmlspecialchars($_POST['pass']);
+    $mdp_repeat=htmlspecialchars($_POST['pass2']);
+    if(!empty($_POST['nom']) && !empty($_POST['postnom']) && !empty($_POST['prenom']) && !empty($_POST['pass'])){
+        $donnees= $bdd->prepare('INSERT INTO students (nom,post_nom,prenom,mdp) VALUE (:nom,:post_nom,:prenom,:mdp)');
+        $donnees->execute(array('nom'=> $fname, 'post_nom'=> $postname,'prenom'=> $sname,'mdp'=> $mdp));
+        
+        echo '<script>alert("Inscription faite");</script>';
+        echo '<script>window.location.href="inscription_page.php";</script>';
+        exit;
+
+    }
+    else
+    {
+        echo '<script>alert("complete all fields");</script>';
+        echo '<script>window.location.href="inscription_page.php";</script>';
+        exit;
+    }
+    
+ }
+    ?>
+</body>
+</html>

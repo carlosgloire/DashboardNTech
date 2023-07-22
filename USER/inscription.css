@@ -1,0 +1,82 @@
+body{
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.829);
+   
+}
+
+
+form{
+  
+    margin-left: 120px;
+   
+}
+h2{
+    
+    margin-top: 20px;
+    color: white;
+   
+}
+input{
+   
+    width: 250px;
+    height: 28px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    background-color: rgba(104, 101, 101, 0.705);
+    
+}
+input[type='text']{
+    color: white;
+     font-size: medium;
+     font-family: arial;
+     font-weight: bold;
+  
+}
+input[type='mail']{
+    font-size: medium;
+    font-family: arial;
+    font-weight: bold;
+}
+input[type='password']{
+    font-size: medium;
+    font-family: arial;
+    font-weight: bold;
+}
+input[type='submit']{
+  
+    background-color: black;
+    color: white;
+   font-family: arial;
+   font-size: medium;
+   font-weight: bold;
+   border-left: 2px solid white;
+   border-right: 2px solid white;
+}
+input[type='submit']:hover{
+    background-color: rgb(179, 175, 175);
+    color:black ;
+}
+section{
+    
+    margin: auto;
+    margin-top: 10%;
+    border: 0.5px solid rgba(255, 255, 255, 0.774);
+    width: 35%;
+    background-color: rgba(0, 0, 0, 0.623);
+    border-radius: 15px;
+    
+}
+.link p{
+    margin-left: 120px;
+    font-size: medium;
+    color: white;
+   
+}
+.link p a{
+   text-decoration: none;
+    color:blue;
+   
+}

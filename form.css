@@ -1,0 +1,64 @@
+body{
+    font-family: arial;
+    font-size: large;
+    background:url(backg/liv1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form{
+  
+    margin-left: 140px;
+   
+}
+h2{
+    color: white;
+    text-shadow: 0px 2px 0px   rgb(4, 4, 112); 
+}
+input{
+   
+    width: 250px;
+    height: 25px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: yellow;
+}
+input[type='text']{
+     font-size: medium;
+     font-family: arial;
+  
+}
+input[type='mail']{
+    font-size: medium;
+    font-family: arial;
+ 
+}
+input[type='password']{
+    font-size: medium;
+    font-family: arial;
+}
+input[type='submit']{
+    outline:  rgb(4, 4, 112);
+    border:  rgb(4, 4, 112);
+    background-color:  rgb(4, 4, 112);
+    color: white;
+   font-family: arial;
+   font-size: medium;
+   font-weight: bold;
+}
+input[type='submit']:hover{
+    background-color: white;
+    color:  rgb(4, 4, 112) ;
+}
+section{
+    margin: auto;
+    margin-top: 10%;
+    box-shadow: 0px 0px 5px 0px rgb(251, 251, 253) ;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.527);
+    
+}

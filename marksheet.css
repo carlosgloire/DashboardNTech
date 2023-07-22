@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Sen-Regular';
+    src: url('Sen-Regular.ttf') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-color: #f2fdff;
+    margin: auto;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Sen-Regular';  
+}
+
+
+/******************BLOC DU MILIEU*****************/
+.bloc_milieu{
+    margin-bottom: 40px;
+    padding-top: 25px;
+    margin-left: 25px;
+    padding-right: 25px;
+}
+.bloc_milieu h1{
+    
+    padding-bottom: 40px;
+ 
+}
+.bloc_milieu .marksheet_bar{
+    background-color: white;
+    
+}
+.bloc_milieu p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+table{
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%;    
+}
+thead tr{
+    color:  rgb(0, 153, 255);
+}
+th, td{
+    padding: 4px 4px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #e3f3ff; 
+}
+tbody tr:nth-child(even){
+    background-color: white;
+}
+tbody tr:first-child td:first-child{
+    border-top-left-radius: 15px;
+}
+tbody tr:first-child td:last-child{
+    border-top-right-radius: 15px;
+}
+tbody tr:last-child td:first-child{
+    border-bottom-left-radius: 15px;
+}
+tbody tr:last-child td:last-child{
+    border-bottom-right-radius: 15px;
+}
+/*************************************************/
